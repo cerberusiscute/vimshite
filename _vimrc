@@ -140,22 +140,6 @@ let g:multi_cursor_start_key='<F7>'
 "let g:syntastic_php_checkers = ['php']
 "bind z to suspend
 nnoremap z :suspend<CR>
-"stuff for haskell
-let g:haddock_browser="/Applications/Safari.app"
-nnoremap <Leader>rl :reload in GHCi<CR>
-autocmd Filetype hs set ai
-autocmd Filetype hs set tabstop=8
-autocmd Filetype hs set expandtab
-autocmd Filetype hs set shiftwidth=4
-autocmd Filetype hs set softtabstop=4
-autocmd Filetype hs set shiftround
-autocmd Filetype * set softtabstop=2
-autocmd Filetype * set tabstop=2
-autocmd Filetype * set shiftwidth=2
-autocmd FileType py set softtabstop=4
-autocmd Filetype py set tabstop=4
-autocmd Filetype py set shiftwidth=4
-autocmd Filetype rb set colorcolumn=81
 
 function! Cc()
 	set colorcolumn=81
