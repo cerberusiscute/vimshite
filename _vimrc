@@ -19,7 +19,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
 set t_Co=256
-colors wombat256mod
+colors zenburn
 "set column 81 to show 80 column border to keep code organized
 "set colorcolumn=81
 "folding
@@ -123,7 +123,7 @@ nnoremap <S-l> gt
 nnoremap <C-t> :tabnew<CR>
 "open new tab. keep this line
 inoremap <C-t> <Esc>:tabnew<CR>
-"map <<e' in insert mode to <ESC>
+"map ,,e in insert mode to <ESC>
 inoremap ,,e <Esc>
 "update instead of full write
 noremap <Leader>u <Esc>:up<CR>
@@ -133,11 +133,7 @@ noremap <Leader>u <Esc>:up<CR>
 "python Powerline_setup()
 "python del Powerline_setup
 "set rtp+=usr/local/lib/python2.7/site-packages/Powerline/bindings/vim
-set encoding=utf-8
 set laststatus=2
-let g:multi_cursor_start_key='<F7>'
-"let g:Powerline_symbols = 'unicode'
-"let g:syntastic_php_checkers = ['php']
 "bind z to suspend
 nnoremap z :suspend<CR>
 
@@ -161,3 +157,12 @@ nnoremap <Leader>sp :setlocal spell! spelllang=en_us<CR>
 nnoremap <Leader>nsp :setlocal nospell!<CR>
 nnoremap <Leader>ab :call Alignby()<CR>
 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+"match braces
+"inoremap { {<CR>}<ESC>ko
+
+filetype plugin indent on
